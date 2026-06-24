@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Для моего Солнышка ❤️</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: #fbf8f3;
+            color: #4a3e3d;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            padding-bottom: 60px;
+        }
+        .header {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(to bottom, #ffeedb, #fbf8f3);
+        }
+        .header h1 {
+            font-size: 2.2rem;
+            color: #d47a5d;
+            margin-bottom: 15px;
+        }
+        .header p {
+            font-size: 1.1rem;
+            color: #7a6e67;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        .timeline {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .card {
+            background: #ffffff;
+            border-radius: 24px;
+            box-shadow: 0 8px 24px rgba(212, 122, 93, 0.06);
+            margin-bottom: 40px;
+            padding: 16px;
+            border: 1px solid #f3ebe1;
+        }
+        .media-container {
+            width: 100%;
+            border-radius: 18px;
+            overflow: hidden;
+            background-color: #f3ebe1;
+        }
+        .media-container img, 
+        .media-container video {
+            width: 100%;
+            display: block;
+            object-fit: cover;
+            border-radius: 18px;
+        }
+        .description {
+            padding: 20px 8px 8px 8px;
+            text-align: center;
+        }
+        .description .date {
+            display: block;
+            font-size: 0.85rem;
+            color: #b5a499;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+        }
+        .description p {
+            font-size: 1.05rem;
+            color: #5c4d4c;
+        }
+        .footer {
+            text-align: center;
+            padding: 40px 20px;
+        }
+        .footer-heart {
+            font-size: 2rem;
+            color: #e26d5c;
+            animation: heartbeat 1.4s infinite;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+        .footer p {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #d47a5d;
+        }
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.15); }
+            100% { transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Для моего главного солнышка ❤️</h1>
+        <p>Я собрал здесь наши самые тёплые, смешные и важные моменты. Это наша маленькая цифровая капсула времени. Листай ниже... 👋</p>
+    </div>
+
+    <div class="timeline">
+
+        <!-- МОМЕНТ 1: ФОТО -->
+        <div class="card">
+            <div class="media-container">
+                <img src="photo1.jpg" alt="Момент 1">
+            </div>
+            <div class="description">
+                <span class="date">Наше начало</span>
+                <p>Тут будет твой текст про первую фотографию. 🥰</p>
+            </div>
+        </div>
+
+        <!-- МОМЕНТ 2: ВИДЕО -->
+        <div class="card">
+            <div class="media-container">
+                <video controls playsinline loop preload="metadata">
+                    <source src="video1.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="description">
+                <span class="date">Бесценный момент</span>
+                <p>А здесь будет подпись к вашему первому видео! 🎬</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <div class="footer-heart">❤️</div>
+        <p>С годовщиной нас! Продолжение следует...</p>
+    </div>
+
+</body>
+</html>
